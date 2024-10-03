@@ -30,7 +30,7 @@ st.write("A simple chatbot built with GP-2. Typpe ypur message below.")
 user_input = st.text_input("You:")
 
 if user_input:
-    with st.spinner("Bot is typing...")
+    with st.spinner("Bot is typing..."):
         response = generate_response(user_input)
     st.write(f"Chatbot: {response}")
 
