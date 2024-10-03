@@ -18,7 +18,7 @@ def generate_response(user_input, max_length=100):
     num_return_sequences =1,
     pad_token_id = tokenizer.eos_token_id,
     do_sample = True,
-    top_p = 0.9
+    top_p = 0.9,
     temperature = 0.7
     )
     response = tokenizer.decode(response_ids[0], skip_special_tokens = True)
